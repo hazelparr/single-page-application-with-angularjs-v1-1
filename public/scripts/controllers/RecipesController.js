@@ -15,7 +15,7 @@
     }
 
     dataService.getCategories(function(response){
-      console.log(response.data);
+      //console.log(response.data);
       $scope.categories = response.data;
     });
 
@@ -30,7 +30,7 @@
       } else {
 
         dataService.getRecipePerCat(cat, function(response){
-        console.log(response.data.length);
+        //console.log(response.data.length);
           $scope.recipePerCat = response.data.length;
         });
       }
